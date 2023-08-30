@@ -10,6 +10,8 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/x-icon" href="/img/download.png">
+
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +31,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -80,13 +85,8 @@
                             <a href="" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Register</a>
                         </div>
                         <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="owl-carousel screenshot-carousel">
-                                <img class="img-fluid" src="img/screenshot-1.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-2.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-3.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-4.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-5.png" alt="">
-                            </div>
+                            <model-viewer src="3dmodels/i_phone_14_pro_copy.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="3dmodels/i_phone_14_pro_copy.gltf" style="height:360px; width: 350px;">
+                            </model-viewer>
                         </div>
                     </div>
                 </div>
@@ -276,7 +276,8 @@
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/about.png">
+                        <model-viewer src="3dmodels/t_shirt_body_male_copy.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="3dmodels/t_shirt_body_male_copy.gltf" style="width: auto; height: 350px;">
+                        </model-viewer>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <h5 class="text-primary-gradient fw-medium">Download</h5>
@@ -285,14 +286,15 @@
                         <div class="row g-4">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                                 <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
-                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    
+                                    <i class="fas fa-shopping-cart fa-lg" style="color: #e8effd;"></i>
                                     <div class="ms-3">
-                                        <p class="text-white mb-0">Available On</p>
-                                        <h5 class="text-white mb-0">App Store</h5>
+                                        <p class="text-white mb-0">Available </p>
+                                        <h5 class="text-white mb-0">Buy Now</h5>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                            <!-- <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                                 <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
                                     <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
                                     <div class="ms-3">
@@ -300,7 +302,7 @@
                                         <h5 class="text-white mb-0">Play Store</h5>
                                     </div>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
