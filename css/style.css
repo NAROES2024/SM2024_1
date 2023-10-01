@@ -25,7 +25,7 @@ h1,
 h2,
 .fw-bold {
   font-weight: 700 !important;
-  font-family: cursive;
+  font-family: "Jost", sans-serif;
 }
 
 h3,
