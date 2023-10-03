@@ -177,7 +177,7 @@ h6,
   font-family: "Jost", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  color: var(--dark) !important;
+  color: var(--light) !important;
   outline: none;
   transition: 0.5s;
 }
