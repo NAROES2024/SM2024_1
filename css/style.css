@@ -169,8 +169,14 @@ h6,
   );
 }
 
-.color_change{
+.color_change_OM {
   color: black !important;
+}
+
+.color_change_M {
+  background: linear-gradient(to bottom right, #4294e3, var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*** Navbar ***/
